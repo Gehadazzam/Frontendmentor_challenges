@@ -128,8 +128,8 @@ button:hover {
   }
   .container {
     background-color: white;
-    padding-inline: 1.5rem;
-    width: 60%;
+    padding: 1rem;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -142,7 +142,7 @@ button:hover {
   }
   .text {
     padding-top: 2.5rem;
-    width: 49%;
+    width: 48%;
   }
   .text h1 {
     font-size: 3.5rem;
@@ -160,7 +160,7 @@ button:hover {
     margin-left: 0px;
   }
   .photo {
-    width: 49%;
+    width: 48%;
   }
   .photo img {
     width: 100%;
@@ -194,5 +194,12 @@ button:hover {
   }
   .email {
     margin-top: 1rem;
+  }
+}
+@media (min-width: 1330px) {
+  .container {
+    padding: 0.3rem;
+    padding-inline: 1.5rem;
+    width: 60%;
   }
 }
