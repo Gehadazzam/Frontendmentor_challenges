@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/age-calculator-app-solution-using-html-css-and-javascript-Q1kZwJXlE)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/age-calculator-app-main-C70xc3LhSX)
+- Live Site URL: [Add live site URL here](https://age-calculator-app-main-chi-two.vercel.app/)
 
 ## My Process
 
