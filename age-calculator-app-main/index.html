@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="labels">
+          <label for="birth-day">
+            <p class="error">Day</p>
+            <input type="text" placeholder="DD" id="birth-day" required />
+            <p class="handleError" id="wrongDay" hidden></p>
+          </label>
+          <label for="birth-month">
+            <p class="error">Month</p>
+            <input type="text" placeholder="MM" id="birth-month" required />
+            <p class="handleError" id="wrongMonth" hidden></p>
+          </label>
+          <label for="birth-year">
+            <p class="error">Year</p>
+            <input type="text" placeholder="YYYY" id="birth-year" required />
+            <p class="handleError" id="wrongYear" hidden></p>
+          </label>
+        </div>
+      </div>
+      <button id="calculate-age">
+        <img src="./assets/images/icon-arrow.svg" alt="" />
+      </button>
+      <div class="result">
+        <div class="year">
+          <h3 id="ageYear">--</h3>
+          <h3>years</h3>
+        </div>
+        <div class="month">
+          <h3 id="ageMonth">--</h3>
+          <h3>months</h3>
+        </div>
+        <div class="day">
+          <h3 id="ageDays">--</h3>
+          <h3>days</h3>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

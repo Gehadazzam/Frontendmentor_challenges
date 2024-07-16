@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Lightred: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Offwhite: hsl(0, 0%, 94%);
+  --Lightgrey: hsl(0, 0%, 86%);
+  --Smokeygrey: hsl(0, 1%, 44%);
+  --Offblack: hsl(0, 0%, 8%);
+  --lighttext: 400;
+  --middle: 700;
+  --bold: 800;
+}
+body {
+  background-color: var(--Offwhite);
+  font-family: "Poppins";
+}
+.container {
+  background-color: var(--White);
+  width: 90%;
+  margin: auto;
+  margin-top: 15%;
+  padding: 1.5rem;
+  position: relative;
+  padding-block: 3.5rem;
+  border-radius: 15px 15px 65px 15px;
+}
+.header {
+  display: flex;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--Smokeygrey);
+}
+.header input {
+  width: 80%;
+  padding: 0.6rem;
+  outline: none;
+  margin-top: 0.2rem;
+  font-weight: var(--bold);
+  font-size: 1.1rem;
+  border: 1px solid var(--Lightgrey);
+  border-radius: 5px;
+  background-color: none;
+}
+.labels {
+  display: flex;
+}
+label {
+  text-transform: uppercase;
+  color: var(--Smokeygrey);
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  font-weight: var(--middle);
+}
+.handleError {
+  letter-spacing: 0;
+  color: var(--Lightred);
+  font-weight: var(--lighttext);
+  text-transform: capitalize;
+  margin-top: 0.2rem;
+  font-size: 0.6rem;
+}
+button img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Purple);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-left: 30%;
+  margin-top: -14%;
+  z-index: 2;
+  position: absolute;
+}
+button img:hover {
+  background-color: var(--Offblack);
+}
+.result {
+  margin-top: 1rem;
+  font-size: 2.8rem;
+  font-weight: var(--bold);
+}
+.year,
+.month,
+.day {
+  display: flex;
+  gap: 0.5rem;
+  margin-block: -9%;
+}
+#ageDays,
+#ageMonth,
+#ageYear {
+  color: var(--Purple);
+}
+@media (min-width: 700px) {
+  .container {
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2rem;
+  }
+  .header {
+    padding-bottom: 2rem;
+  }
+  .labels {
+    width: 80%;
+  }
+  .header input {
+    width: 60%;
+  }
+  button img {
+    margin-top: -12%;
+    margin-left: 15rem;
+  }
+  .year,
+  .month,
+  .day {
+    margin-block: -4%;
+  }
+}
+@media (min-width: 880px) {
+  button img {
+    margin-top: -9%;
+    margin-left: 25rem;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    width: 43%;
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  .header {
+    width: 90%;
+  }
+  .labels {
+    width: 90%;
+  }
+  .header .labels input {
+    width: 80%;
+    margin-top: 0.2rem;
+  }
+  button img {
+    margin-top: -9%;
+    margin-left: 25rem;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 40%;
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  button img {
+    margin-top: -50px;
+    margin-left: 24.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  button img {
+    margin-left: 27.5rem;
+  }
+}
