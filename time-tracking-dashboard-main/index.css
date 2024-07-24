@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+:root {
+  --lieghtora: hsl(15, 100%, 70%);
+  --softBlue: hsl(195, 74%, 62%);
+  --darkBlue: hsl(235, 46%, 20%);
+  --desaturatedBlue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+  --verydarkBlue: hsl(226, 43%, 10%);
+  --lightRed: hsl(348, 100%, 68%);
+  --LimeGreen: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --blue: hsl(246, 80%, 60%);
+  --SoftOrange: hsl(43, 84%, 65%);
+}
+body {
+  background-color: var(--verydarkBlue);
+}
+.container {
+  width: 100%;
+  height: 70%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+.person {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--blue);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.info {
+  background-color: var(--violet);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.person .info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.person .info p {
+}
+.person .info h2 {
+}
+.container .optionTime {
+  text-align: left;
+  color: white;
+  margin-left: 13px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container .optionTime > button {
+  margin-bottom: 10px;
+  color: white;
+  background-color: inherit;
+  border: none;
+  text-align: left;
+}
+.cards {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.cards .cardContainer1 {
+  background: url("./images/icon-work.svg") no-repeat top right;
+  cursor: url("./images/image-jeremy.png") auto;
+}
+.cards .cardContainer1::after {
+  background-color: var(--lieghtora);
+}
+.cards .cardContainer2 {
+  background-color: var(--softBlue);
+}
+.cards .cardContainer3 {
+  background-color: var(--lightRed);
+}
+.cards .cardContainer4 {
+  background-color: var(--LimeGreen);
+}
+.cards .cardContainer5 {
+  background-color: var(--darkBlue);
+}
+.cards .cardContainer6 {
+  background-color: var(--paleBlue);
+}
+.cards .cc {
+  border-radius: 15px;
+  padding-top: 40px;
+  width: 230px;
+}
+.cards .card {
+  background-color: var(--desaturatedBlue);
+  border-radius: 12px;
+  padding: 30px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.cards .cardContainer {
+}
+.cards .time {
+}
+.cards .time h3 {
+}
+.cards .time h4 {
+}
+.cards .daily {
+}
+.cards .weekly {
+}
+.cards .monthly {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

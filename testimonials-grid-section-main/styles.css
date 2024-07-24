@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --ModerateViolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--Lightgray);
+  color: var(--White);
+  padding: 5%;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.who-are-you {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin-left: 18px;
+}
+
+.card {
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 20px 0px;
+  font-weight: 600;
+}
+
+span {
+  opacity: 50%;
+}
+
+.daniel-card {
+  background-color: var(--ModerateViolet);
+}
+
+.jonathan-card {
+  background-color: var(--Verydarkgrayishblue);
+}
+
+.jeanette-card {
+  background-color: var(--White);
+  color: black;
+}
+
+.patrick-card {
+  background-color: var(--Verydarkblackishblue);
+}
+
+.kira-card {
+  background-color: var(--Lightgrayishblue);
+  color: black;
+}
+
+.quotation {
+  margin-left: 200px;
+  width: 90px;
+  height: 110px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 1%;
+  }
+  .container {
+    width: 80%;
+    height: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 17px;
+  }
+  .daniel-card {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .jonathan-card {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .kira-card {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+  .jeanette-card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .patrick-card {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+}

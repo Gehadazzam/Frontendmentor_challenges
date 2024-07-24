@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+body {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 28px; /* Ensure correct unit */
+  background-color: var(--DarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.adviceContainer {
+  background-color: var(--DarkGrayishBlue);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+.adviceId {
+  color: var(--NeonGreen);
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.advice {
+  color: var(--LightCyan);
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.buttonAdvice {
+  background-color: var(--NeonGreen);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 37%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.buttonAdvice:hover {
+  box-shadow: 0 0 15px var(--NeonGreen), 0 0 20px var(--NeonGreen),
+    0 0 30px var(--NeonGreen);
+}
+@media (min-width: 1024px) {
+  .adviceContainer {
+    width: 40%;
+  }
+  .buttonAdvice {
+    margin-left: 7.3em;
+  }
+}
